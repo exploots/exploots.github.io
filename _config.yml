@@ -19,20 +19,30 @@
 # in the templates via {{ site.myvariable }}.
 
 title: exploots
-author: exploots.github.io
-description: >
+author:                         # Minima-3.0
+  name: exploots
+  email: 
+description: > # this means to ignore newlines until "baseurl:"
   GitHub Pages site for advisories, blog posts, talks / presentations that I've written and published.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://exploots.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: exploots
-github_username:  exploots
+# twitter_username: exploots
+# github_username:  exploots
 
 # Build settings
-theme: minima
+remote_theme: jekyll/minima     # Minima-3.0
 plugins:
   - jekyll-feed
-minima:
+  - jekyll-remote-theme         # Minima-3.0
+minima:                         # Minima-3.0
   skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/exploots" }
+    - { platform: twitter, user_url: "https://twitter.com/exploots"}
+
+header_pages:
+  - about.markdown
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,12 +52,12 @@ minima:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
-#   - Gemfile.lock
+  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

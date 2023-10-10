@@ -10,6 +10,6 @@ Currently living in The Netherlands.
 
 # WTF is exploots?
 
-Comes from the two most impactful stages of a cyber attack / breach:
+A portmanteau formed from the two most impactful stages of a cyber attack / breach:
 - **Expl**oitaion
 - **Loot**ing (Data exfiltration)
